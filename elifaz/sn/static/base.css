@@ -1,0 +1,626 @@
+/*
+-----
+RESET
+-----
+*/
+
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    /*border-bottom:1px dotted;*/
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+/*
+--------
+STANDARD
+--------
+*/
+
+/* 
+html 4.01 standard
+http://www.w3.org/TR/CSS21/sample.html
+*/
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   { display: block; unicode-bidi: embed }
+li              { display: list-item }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+col             { display: table-column }
+colgroup        { display: table-column-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bolder; text-align: center }
+caption         { text-align: center }
+body            { /*margin: 8px*/ }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.3em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, /*ul,*/
+fieldset, form,
+/*ol,*/ dl, dir,
+menu            { margin: 1.12em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace }
+pre             { white-space: pre }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+table           { border-spacing: 2px; }
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th, tr      { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+ol, ul, dir,
+menu, dd        { /*margin-left: 40px*/ }
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { /*text-decoration: underline*/ }
+br:before       { content: "\A"; white-space: pre-line }
+center          { text-align: center }
+:link, :visited { /*text-decoration: underline*/ }
+:focus          { /*outline: thin dotted invert*/ }
+
+/* Begin bidirectionality settings (do not change) */
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  h1            { page-break-before: always }
+  h1, h2, h3,
+  h4, h5, h6    { page-break-after: avoid }
+  ul, ol, dl    { page-break-before: avoid }
+}
+
+
+
+
+/*
+-----
+FONTS
+-----
+*/
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v7/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'WalkwayBlackRegular';
+    src: url('fonts/walkway_black-webfont.eot');
+    src: url('fonts/walkway_black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/walkway_black-webfont.woff') format('woff'),
+    url('fonts/walkway_black-webfont.ttf') format('truetype'),
+    url('fonts/walkway_black-webfont.svg#WalkwayBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+----
+BASE
+----
+*/
+
+body {
+    font: 1em/1.4em "Lucida Grande", "Verdana", "Arial", "Helvetica", sans-serif;
+    background-color: #cccfff;
+    color: black;
+}
+
+body > .canvas {
+    background-color: white;
+}
+
+body > .canvas > * {
+    max-width: 40em;
+    margin: auto;
+    padding: 1px 3%;
+}
+
+body > .canvas > header {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+body > footer {
+    border-top: solid 2px #988fbf;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+body > .canvas {
+    padding-bottom: 2.1em;
+}    
+
+body > .canvas > article section {
+    margin-top: 1.6em;
+}
+
+body > .canvas > article article {
+    margin-top: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    -moz-transition: all 0.2s ease-in 0s;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+a:hover {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: navy;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+}
+
+h1,
+.home h2 {
+    font-size: 2.9em;
+    line-height: 1.1em;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+}
+
+h2 {
+    font-size: 2.1em;
+    margin-top: 2.8em;
+    text-transform: uppercase;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav * {
+    display: inline;
+}
+
+nav li {
+    padding-left: 0.5em;
+}
+
+nav li:first-child {
+    padding-left: 0em
+}
+
+span.term {
+    font-size: 1em;
+}
+
+.term a {
+    color: inherit;
+}
+
+a, .term a:hover {
+    color: navy;
+}
+
+span.smartlinks-unresolved {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+/*
+-------
+ARTICLE
+-------
+*/
+
+article header {
+    margin-top: 3.9em;
+    margin-bottom: 0.8em;
+}
+
+article h3 {
+    margin: 0;
+    margin-bottom: 0.1em;
+    padding: 0;
+    font-weight: normal;
+    font-size: 2.1em;
+    line-height: 0.83em;
+}
+
+article ul {
+    list-style-type: none;
+}
+
+article li > a,
+article > footer a {
+    display: block;
+    margin: 2mm 0;
+    background: #ddd;
+    text-indent: -3em;
+    padding-left: 3.7em;
+    padding-right: 0.7em;
+    border-radius: 2px;
+}
+
+article > footer a {
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 5em;
+    text-align: center;
+}
+
+article li > a:before,
+article > footer a:before {
+    content: "\203a\a0";
+}
+
+@media all and (max-width: 600px) {
+    article table th,
+    article table td,
+    article li > a,
+    article > footer a {
+	padding-top: 4mm;
+	padding-bottom: 4mm;
+    }
+}
+
+@media all and (min-width: 600px) {
+    article table th,
+    article table td,
+    article li > a,
+    article > footer a {
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+    }
+}
+
+article li > a > b,
+article h3 b,
+article > footer a > b {
+    font-weight: normal;
+}
+
+h1 > span,
+h1 > small,
+a > span,
+a > small {
+    color: #333;
+    text-transform: none;
+}
+
+article li > a > span,
+article li a > small {
+    font-size: 0.7em;
+    line-height: 0.91em;
+}
+
+article h1 span,
+article h3 span
+{
+    font-size: 0.75em;
+}
+
+article h1 small,
+article h3 small
+{
+    font-size: 0.6em;
+    line-height: 0.7em;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+/*----
+SCUOLA
+----*/
+
+#edition article.tabbertab.module {
+    margin-top: 0;
+}
+
+#edition ul.tabbernav li > a {
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+}
+
+@media all and (min-width: 600px) {
+    /*--------------------------------------------------
+      REQUIRED to hide the non-active tab content.
+      But do not hide them in the print stylesheet!
+      --------------------------------------------------*/
+    .tabberlive .tabbertabhide {
+	display: none;
+    }
+
+    /*--------------------------------------------------
+      .tabber = before the tabber interface is set up
+      .tabberlive = after the tabber interface is set up
+      --------------------------------------------------*/
+    .tabber {
+    }
+    .tabberlive {
+	margin: 1em 0;
+    }
+
+    /*--------------------------------------------------
+      ul.tabbernav = the tab navigation list
+      li.tabberactive = the active tab
+      --------------------------------------------------*/
+    ul.tabbernav
+    {
+	margin: 0;
+	padding: 3px 0;
+	border-bottom: 1px solid #778;
+    }
+
+    ul.tabbernav li
+    {
+	list-style: none;
+	margin: 0;
+	display: inline;
+    }
+
+    ul.tabbernav li a
+    {
+	padding: 3px 0.5em;
+	margin-left: 3px;
+	border: 1px solid #778;
+	border-bottom: none;
+	background: #DDE;
+    }
+
+    ul.tabbernav li a:hover
+    {
+	background: #AAE;
+	border-color: #227;
+    }
+
+    ul.tabbernav li.tabberactive a
+    {
+	background-color: #fff;
+	border-bottom: 1px solid #fff;
+    }
+
+    ul.tabbernav li.tabberactive a:hover
+    {
+	color: #000;
+	background: white;
+	border-bottom: 0;
+    }
+
+    /*--------------------------------------------------
+      .tabbertab = the tab content
+      Add style only after the tabber interface is set up (.tabberlive)
+      --------------------------------------------------*/
+    .tabberlive .tabbertab {
+	border: 1px solid #aaa;
+	border-top: 0;
+	background: white; /* url(images/fiber.jpg);*/
+    }
+
+    .tabbertab {
+	padding: 1em;
+    }
+}
+
+
+@media all and (max-width: 600px) {
+    ul.tabbernav {
+	display: none;
+    }
+}
+
+
+/* NEW */
+
+
+table * {
+    vertical-align: top;
+}
+
+table li > a * {
+    vertical-align: baseline;
+}
+
+.program h2 {
+    display: none;
+}
+
+.module h3 b {
+    display: block;
+    margin: 0.1em 0;
+}
+
+.call_set th {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.module .venue {
+    margin: 1em 0;
+}
+
+.module .venue .place {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.call_set th {
+    text-align: left;
+}
+
+.call .content .wrapper .label {
+    display: none;
+}
+
+.call .content em {
+    font-style: normal;
+}
+
+.call .title {
+    font-weight: bold;
+}
+
+.call .description {
+   font-style: italic;
+}
+
+.call td.datetime {
+    padding-right: 1em;
+}
+
+ul.references {
+    margin-left: 3em;
+}
+
+@media all and (max-width: 600px) {
+    article table,
+    article table tr,
+    article table th,
+    article table td {
+	display: block;
+    }
+
+    .call td.datetime {
+	float: left;
+	padding-bottom: 0;
+	font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .call td.datetime {
+	text-align: right;
+    }
+}

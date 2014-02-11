@@ -1,0 +1,9 @@
+{% regroup post_list by label as section_list %}
+{% for section in section_list %}
+  <section>
+    <h2>{{ section.grouper }}</h2>
+    {% for post in section.list %}
+      {% include "chances/post_detail.html" %}
+    {% endfor %}
+  </section>
+{% endfor %}

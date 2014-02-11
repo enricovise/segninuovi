@@ -1,0 +1,33 @@
+shared/base
+	newsletter/issue_detail_email (newsletter/title, newsletter/heading, newsletter/content)
+	shared/base_web
+		shared/object_list
+			sn/person_list (shared/person)
+			scuoladsc/edition_list
+			newsletter/issue_list (shared/published_female)
+		sn/person_detail (shared/material)
+		newsletter/issue_detail (newsletter/title, newsletter/heading, newsletter/content)
+		scuoladsc/edition_detail_page
+			scuoladsc/edition_detail_schema
+				scuoladesc/edition_detail (shared/person, shared/material)
+		board/post_list (board/post_detail)
+
+chances/post_detail
+	board/post_detail
+
+
+
+shared/material (shared/published)
+
+shared/person
+
+shared/small
+	shared/presented
+	shared/published
+		shared/published_female
+
+newsletter/title
+
+newsletter/heading (shared/published_female)
+
+newsletter/content (chances/post_detail)

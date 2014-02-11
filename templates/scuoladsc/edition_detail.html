@@ -1,0 +1,64 @@
+{% extends "scuoladsc/edition_detail_schema.html" %}
+
+{% load smartlinks %}
+{% load static %}
+
+{% block module %}
+  {{ module.title|smartlinks|safe }}
+{% endblock %}
+
+
+{% block venue %}
+  {% with venue=module.venue %}
+    <a class="place" href="{{ venue.url }}">{{ venue.name }}</a>
+    <br />
+    <a class="address" href="{{ venue.address.url }}">{{ venue.address }}</a>
+  {% endwith %}
+{% endblock %}
+
+
+{% block call_datetime %}
+  {% if call.display_datetime %}
+    {% with datetime=call.datetime %}
+      <time datetime="{{ datetime|date:"Y-m-d" }}T{{ datetime|time:"H:i" }}">{{ datetime|time:"H.i" }}</time>
+    {% endwith %}
+  {% endif %}
+{% endblock %}
+
+
+{% block call_content %}
+  {% for tag in call.nonvoid_tags %}
+    <div class="{{ tag.0 }}">
+      {{ tag.1|smartlinks|safe }}
+    </div>
+  {% endfor %}
+{% endblock %}
+
+
+{% block call_reference %}
+  <a href="{% get_media_prefix %}{{ reference.material.file.file }}" title="{{ reference.material.file }}" class="name">{{ reference.title|smartlinks|safe }}</a>
+{% endblock %}
+
+
+{% block speaker %}
+  {% with person=speaker.person %}
+    {% url 'person_detail' slug=person.slug as person_url %}
+    {% include "shared/person.html" %}
+  {% endwith %}
+{% endblock %}
+
+
+{% block speaker_reference %}
+  <a href="{% get_media_prefix %}{{ reference.material.file.file }}" title="{{ reference.material.file }}" class="name">{{ reference.title|smartlinks|safe }}</a>
+{% endblock %}
+
+
+{% block references %}
+  <ul>
+    {% for reference in references %}
+      <li>
+	{% include "shared/material.html" with material=reference.material note=reference.get_module %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

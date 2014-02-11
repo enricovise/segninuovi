@@ -1,0 +1,7 @@
+{% extends "shared/object_list.html" %}
+
+{% block title %}Persone{% endblock %}
+{% block heading %}Persone{% endblock %}
+{% block object %}
+  {% include "shared/person.html" with person=object %}
+{% endblock %}

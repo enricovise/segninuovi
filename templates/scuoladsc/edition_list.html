@@ -1,0 +1,9 @@
+{% extends "shared/object_list.html" %}
+
+{% block title %}Scuola{% endblock %}
+{% block heading %}Scuola{% endblock %}
+{% block object %}
+  {% with edition=object %}
+    <a href="{{ edition.get_absolute_url }}">{{ edition.title }}</a>
+  {% endwith %}
+{% endblock %}

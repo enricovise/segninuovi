@@ -1,0 +1,14 @@
+{% load static %}
+{% load smartlinks %}
+
+<a href="{% get_media_prefix %}{{ material.file.file }}">
+  {% if material.get_author_string %}
+    <b class="authors">{{ material.get_author_string|safe }}</b>
+  {% endif %}
+  <cite>{{ material.file.name|smartlinks }}</cite>
+  {% if material.date %}
+    {% include "shared/published.html" with date=material.date %}
+  {% endif %}
+</a>
+
+

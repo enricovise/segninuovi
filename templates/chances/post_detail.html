@@ -1,0 +1,21 @@
+{% load smartlinks %}
+
+<article class="post">
+  <header>
+    <h3>
+      <a href="{{ post.get_absolute_url }}">
+	<b>{{ post.title|smartlinks|safe }}</b>
+	{% if post.subtitle %}
+	<span>{{ post.subtitle|smartlinks|safe }}</span>
+	{% endif %}
+      </a>
+    </h3>
+    {% block metadata %}{% endblock %}
+  </header>
+  <div class="description">
+    {{ post.description|smartlinks|safe }}
+  </div>
+  <footer>
+    <div><a href="{{ post.get_absolute_url }}">Mostra</a></div>
+  </footer>
+</article>

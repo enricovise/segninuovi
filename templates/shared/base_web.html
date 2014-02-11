@@ -1,0 +1,29 @@
+{% extends "shared/base.html" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ STATIC_URL }}base.css" />
+{% endblock %}
+
+{% block header %}
+  {{ block.super }}
+  <nav>
+    <ul>
+      <li><a href="{% url 'post_list' %}">Home</a></li>
+      <li><a href="{% url 'person_list' %}">Persone</a></li>
+      <li><a href="{% url 'edition_list' %}">Scuola</a></li>
+      <li><a href="{% url 'issue_list' %}">Newsletter</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block footer %}
+<p>
+  <small>
+    © 2001-{% now "Y" %}
+    <a href="http://www.segninuovi.org/">Fondazione Segni Nuovi</a>.
+    <br />
+    Rilasciato sotto la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Italy License</a>.
+  </small>
+</p>
+<address>Contatta il <a href="mailto:dummy@segninuovi.org">webmaster</a>.</address>
+{% endblock %}

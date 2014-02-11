@@ -1,0 +1,6 @@
+<small class="{% block class %}{% endblock %}">
+  <span class="icon">{% block icon %}{% endblock %}</span>&nbsp;{% block caption %}{% endblock %} {{ date|date:"l j F Y" }}
+  {% if note %}
+    ({{ note }})
+  {% endif %}
+</small>

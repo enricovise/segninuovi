@@ -1,0 +1,421 @@
+.nav-2011 .nav-2011,
+.nav-presentation .nav-scuola,
+.nav-2012
+{
+    -webkit-box-shadow: 0px -3px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -3px 4px 1px rgba(0, 0, 0, 0.3); 
+    background: #e1e1e1 url(images/fiber.jpg);
+}
+
+.nav-2011 .nav-2012,
+.nav-2011 .nav-scuola,
+.nav-presentation .nav-2012,
+.nav-presentation .nav-2011
+{
+    background: transparent;
+    box-shadow: inherit;
+}
+ 
+#topic dl, #topic ul.aims, #topic ul.installments, #topic ul.people {
+    margin: 0.4em 0; margin-left: 1.4em;
+    padding-left: 1.4em;
+    list-style-type: disc;
+}
+
+#topic div.silver-lining {
+    margin: 0 20%;
+}
+
+#topic a.speaker[href$='.pdf'] {
+    padding-left: 0;
+}
+
+#topic header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+#topic header h2 {
+    font: normal normal 2.5em/1.2em 'Amethysta', inherit;
+    font-size: 1.9em;
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+    background: url(images/festival03.png) top center no-repeat;
+    padding-top: 140px;
+}
+
+#topic aside, #topic header h3 {
+    margin: 1em -29.33333333%;
+}
+
+#topic form, #topic blockquote.email {
+    margin-top: 1em;
+}
+#topic form, #topic blockquote.email {
+    border-collapse: collapse;
+    border-top: none;
+    border-right: none;
+}
+
+#topic .events p, #topic .seminar td p, #topic .panel td p, #topic .seminar li, #topic .panel li {
+    margin: 0;
+    padding: 0;
+}
+
+#topic form h3 {
+    border-color: #A0B1D2;
+    color: #C2CAD4;
+}
+
+#topic .greetings dt, #topic .seminar dt, #topic .panel dt, #topic .events dt {
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+#topic td.greetings dt.saturday {
+    margin-top: 0em;
+}
+
+#topic dl.file, #topic dl.file * {
+    margin: 0;
+    padding: 0;
+}
+
+#topic td {
+    padding-right: 1.5em;
+}
+
+.redo label, span.error {
+    color: #C33;
+}
+
+span.error {
+    font-weight: bold;
+}
+
+#topic form table, #topic form p {
+    padding-left: 1.5em;
+}
+
+#topic form h3 {
+    padding-left: 0.8em;
+}
+
+#topic form td {
+    vertical-align: top;
+}
+
+#topic form th {
+    font-weight: normal;
+    text-align: left;
+}
+
+#topic blockquote.email {
+    background: url(../images/semiwhite.png);
+    font-family: monospace;
+    white-space: pre-line;
+}
+
+#topic ul.documents {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#topic ul.documents li {
+    margin: 0.5em 0;
+}
+
+#topic ul.documents li * {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline;
+}
+
+#logo-scuola {
+    text-align: center;
+    margin-left: 0.5em;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+    display: none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+    margin: 1em 0;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+    margin: 0;
+    padding: 3px 0;
+    border-bottom: 1px solid #778;
+}
+
+ul.tabbernav li
+{
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+
+ul.tabbernav li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #778;
+    border-bottom: none;
+    background: #DDE;
+}
+
+ul.tabbernav li a:hover
+{
+    background: #AAE;
+    border-color: #227;
+}
+
+ul.tabbernav li.tabberactive a
+{
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+    color: #000;
+    background: white;
+    border-bottom: 0;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+    border: 1px solid #aaa;
+    border-top: 0;
+    background: white; /* url(images/fiber.jpg);*/
+}
+
+.tabbertab {
+    padding: 1em;
+}
+
+
+
+
+#people {
+    margin-bottom: 1em;
+}
+
+#payment {
+    background: white;
+    padding: 1em; padding-top: 0;
+    border: solid 1px #aaa;
+}
+
+#payment dt {
+    margin-top: 0.3em;
+    display: list-item;
+}
+
+#payment dd {
+    font-weight: bold;
+    margin: 0; margin-bottom: 0.1em;
+    padding: 0;
+}
+
+#subscription {
+    padding: 1em;
+}
+
+#subscription h3 {
+    margin-top: 0;
+}
+
+li.external a {
+    background-color: transparent;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    line-height: 18px;
+    background-image: url(http://www.segninuovi.org/images/icon_html2.png);
+}
+
+ul.documents h4 {
+    font-weight: normal;
+}
+ul.documents h4 span.source, .author {
+    font-variant: small-caps;
+}
+
+table.prog {
+    width: 100%;
+}
+
+.year2011 .steering-committee {
+    margin-bottom: 2em;
+}
+
+#topic .file, #topic .file * {
+    margin: 0;
+    padding: 0;
+}
+
+#topic .file {
+    overflow: hidden;
+    height: 100%;
+    text-align: right;
+}
+
+#topic .file dt {
+    float: right;
+}
+
+#topic .file .name {
+    font-size: 1.6em;
+}
+
+#topic .file .info {
+    margin-top: 0.75em;
+}
+
+#topic .file .data {
+    padding-left: 140px;
+}
+
+.file ul {
+    list-style: none;
+}
+
+#topic .file a[href$='.pdf'] {
+    background-color: transparent;
+    background-position: center left;
+    background-repeat: no-repeat;
+    /*display: inline-block;*/
+    padding-left: 0px;
+    background-image: none;
+}
+
+
+
+
+/* NEW */
+
+table * {
+    vertical-align: top;
+}
+
+.module .label {
+    font-weight: normal;
+}
+
+.module h4 .title {
+    font-weight: bold;
+}
+
+.module h4 .title, .call_set th {
+    font-size: 1.2em;
+}
+
+.module .venue {
+    margin: 1em 0;
+}
+
+.module .venue .place {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.call_set th {
+    text-align: left;
+    padding-bottom: 0.35em;
+    padding-top: 0.45em;
+}
+
+.call td {
+    padding-bottom: 0.1em;
+    padding-top: 0.3em;
+}
+
+.call td.datetime {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.call .content *, .speaker * {
+    display: inline;
+}
+
+.call .content .wrapper .label {
+    display: none;
+}
+
+.call .content div.name, .call .content .label, .call .content .title, .call .content .subtitle, .call .content .description, .call .content .speakers, .speakers .speaker {
+    display: block;
+}
+
+.call .content em {
+    font-style: normal;
+}
+
+.call .title {
+    font-weight: bold;
+}
+
+.call .description {
+   font-style: italic;
+}
+
+.speaker .name {
+    font-weight: bold;
+    font-style: normal;
+}
+/*
+ul.references:before {
+    content: " (";
+}
+
+ul.references:after {
+    content: ")";
+}
+
+li.reference:before {
+    content: ", ";
+}
+
+li:first-child.reference:before {
+    content: "";
+}
+
+.reference .name {
+    font-weight: normal;
+}
+
+.program ul, .program ol {
+    margin: 0;
+}
+
+.program h2 {
+    display: none;
+}
+*/

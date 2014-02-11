@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>
+    {% block title %}Risorse{% endblock %} - Segni Nuovi
+  </title>
+
+  <!--[if IE]>
+  <script src="stdres/html5.js"></script>
+  <![endif]-->
+
+  <!--[if ! lte IE 6]><!-->
+    {% block stylesheet %}{% endblock %}
+  <![endif]-->
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="{{ STATIC_URL }}ie6.1.1.css" />
+  <![endif]-->
+  {% block script %}{% endblock %}
+</head>
+<body>
+  <div class="canvas">
+    <header>
+      {% block header %}
+        <div id="logo">
+          <img src="{{ MEDIA_URL }}logo.jpg" alt="Segninuovi" width="175" height="35" />
+        </div>
+      {% endblock %}
+    </header>
+    <article class="{% block article_class %}base{% endblock %}">
+      <h1>{% block heading %}{% endblock %}</h1>
+      {% block content %}{% endblock %}
+    </article>
+  </div>
+  <footer>{% block footer %}{% endblock %}</footer>
+</body>
+</html>

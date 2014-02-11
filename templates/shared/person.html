@@ -1,0 +1,9 @@
+<a href="{{ person.get_absolute_url }}">
+  {% spaceless %}
+    <b class="person">{{ person.get_name|safe }}</b>
+    {% if person.organization %}
+      <span>,&ensp;</span>
+      <span class="organization">{{ person.organization }}</span>
+    {% endif %}
+  {% endspaceless %}
+</a>

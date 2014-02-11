@@ -1,0 +1,28 @@
+{% extends "shared/base_web.html" %}
+
+{% load sn_extras %}
+{% load static %}
+
+{% block title %}Scuola DSC {{ edition.content.name }}{% endblock %}
+
+{% block script %}
+  <script type="text/javascript" src="{{ STATIC_URL }}tabber.js"></script>
+{% endblock %}
+
+{% block heading %}{{ edition.title }}{% endblock %}
+{% block content %}
+  <article id="edition">
+    {% if edition.module_set.all %}
+      <section class="program">
+	<h2>Programma</h2>
+	{% block edition %}{% endblock %}
+      </section>
+    {% endif %}
+    {% if references %}
+      <section class="materials">
+	<h2>Materiali</h2>
+	{% block references %}{% endblock %}
+      </section>
+    {% endif %}
+  </article>
+{% endblock %}

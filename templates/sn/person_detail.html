@@ -1,0 +1,26 @@
+{% extends "shared/base_web.html" %}
+
+{% load sn_extras %}
+{% load smartlinks %}
+{% load static %}
+
+{% block title %}{{ person.get_name|safe }}{% endblock %}
+{% block heading %}{{ person.get_name|safe }}{% endblock %}
+{% block content %}
+  {% autoescape on %}
+  <section class="biography">
+    {{ person.biography|smartlinks|safe }}
+  </section>
+  {% endautoescape %}
+
+  {% if materials %}
+    <section class="materials">
+      <h2>Materiali</h2>
+      <ul>
+	{% for material in materials %}
+	  <li>{% include "shared/material.html" %}</li>
+	{% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endblock %}

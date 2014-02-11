@@ -1,0 +1,12 @@
+{% extends "shared/object_list.html" %}
+
+{% block title %}Newsletter{% endblock %}
+{% block heading %}Newsletter{% endblock %}
+{% block object %}
+  {% with issue=object %}
+    <a href="{{ issue.get_absolute_url }}">
+      <b>{{ issue.formatted_number }}</b>
+      {% include "shared/published_female.html" with date=issue.end %}
+    </a>
+  {% endwith %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "shared/base_web.html" %}
+
+{% block article_class %}home{% endblock %}
+{% block title %}Bacheca{% endblock %}
+{% block heading %}Primo piano{% endblock %}
+{% block content %}
+  {% for post in post_list %}
+    {% include "board/post_detail.html" %}
+  {% endfor %}
+{% endblock %}

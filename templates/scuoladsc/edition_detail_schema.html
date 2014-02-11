@@ -1,0 +1,105 @@
+{% extends "scuoladsc/edition_detail_page.html" %}
+
+{% load l10n %}
+
+{% block edition %}
+<div class="tabber edition">
+  {% for module in edition.module_set.all %}
+    <article class="tabbertab module" title="{% if forloop.first %}{{ module.name }}{% else %}{{ forloop.counter }}{% endif %}">
+	
+      <header>
+	<h3>
+	  <small>{{ module.name }}</small>
+	  <b>{% block module %}{% endblock %}</b>
+	</h3>
+	<p class="venue">{% block venue %}{% endblock %}</p>
+      </header>
+      
+      {% regroup module.call_set.all by datetime|date:"l d F Y" as calls_by_day %}
+
+      {% if calls_by_day %}
+	<table class="call_set">
+
+	  <colgroup>
+	    <col class="datetime" />
+	    <col class="content" />
+	  </colgroup>
+	  
+	  <tbody>
+	    {% for day in calls_by_day %}
+	      <tr class="day">
+		<th colspan="2" class="label">{{ day.grouper|capfirst }}</th>
+	      </tr>
+	      
+	      {% for call in day.list %}
+		<tr class="call">
+
+		  {% spaceless %}
+		    <td class="datetime">
+		      {% block call_datetime %}{% endblock %}
+		    </td>
+		  {% endspaceless %}
+
+		  {% spaceless %}
+		    <td class="content">
+		      {% block call_content %}{% endblock %}
+
+		      {% with references=call.reference_set.all speakers=call.speaker_set.all%}
+			{% if references or speakers %}
+			  <ul class="wrapper">
+			    {% if references %}
+			      <li>
+				<p class="label">Materiali:</p>
+				<ul class="references">
+				  {% for reference in references %}
+				    <li class="reference">
+				      {% block call_reference %}{% endblock %}
+				    </li>
+				  {% endfor %}
+				</ul>
+			      </li>
+			    {% endif %}
+			    
+			    {% if speakers %}
+			      <li>
+				<p class="label">Relatori:</p>
+				<ul class="speakers">
+				  {% for speaker in speakers %}
+				    <li class="speaker">
+				      {% block speaker %}{% endblock %}
+				      {% with references=speaker.reference_set.all %}
+					{% if references %}
+					  <ul class="references">
+					    {% for reference in references %}
+					      <li class="reference">
+						{% block speaker_reference%}{% endblock %}
+					      </li>
+					    {% endfor %}
+					  </ul>
+					{% endif %}
+				      {% endwith %}
+				    </li>
+				  {% endfor %}
+				</ul>
+			      </li>
+			    {% endif %}
+			  </ul>
+			{% endif %}
+		      {% endwith %}
+
+		    </td>
+		  {% endspaceless %}
+
+		</tr>
+	      {% endfor %}
+
+	    {% endfor %}
+	  </tbody>
+
+	</table>
+      {% endif %}
+
+    </article>
+  {% endfor %}
+</div>
+{% endblock edition %}
